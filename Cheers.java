@@ -22,9 +22,9 @@ public class Cheers {
                         System.out.println("Give me a  " + str.charAt(i) +": " + str.charAt(i) + "!");
                 }
             }
-            for (int t=0; t<num;t++){
-                System.out.println("What does that spell?");    
-                System.out.println(str+ "!!!");
+                System.out.println("What does that spell?");   
+            for (int t=0; t<num;t++){ 
+                System.out.println(str+ "!!!"); 
             }
 
         }
