@@ -11,17 +11,14 @@ public class TimeCalc {
         int totalMinutes = hour1*60 + minute1 + minutesToAdd;
         hour1 = (totalMinutes/60)%24;
         minute1 =totalMinutes%60;
-        if (hour1<10&&minute1<10){
-            System.out.println("0"+hour1+":"+minute1+"0");
-        }
         if (hour1<10){
-            System.out.println("0"+hour1+":"+minute1);
+            System.out.print("0");
         }
-        else if (minute1<10){
-            System.out.println(hour1+":0"+minute1);
+        System.out.println(hour1 + ":");
+        if (minute1<10){
+            System.out.print("0"+hour1+":"+minute1);
         }
-        else{
-             System.out.println(hour1+":"+minute1);
+             System.out.println(minute1);
         }
 
     }
